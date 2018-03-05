@@ -9,7 +9,7 @@
 
 #n-list
 (defun flatten (l &optional (acc (list)))
-  (if (not (car l))
+  (if (not l)
     acc
     (if (consp (car l))
       (flatten (cdr l) (append acc (flatten (car l))))
@@ -20,7 +20,7 @@
 
 #2-dimensional-list
 (defun flatten (l &optional (acc (list)))
-  (if (not (car l))
+  (if (not l)
     acc
     (if (consp (car l))
       (flatten (cdr l) (append acc (car l)))
