@@ -29,4 +29,4 @@
   )
 )
 
-(defun mapFlatten (f l &optional (acc (list))) (myMap f (flatten l)) )
+(defun mapFlatten (f l) (myMap f (flatten l)) )
